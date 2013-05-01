@@ -1,0 +1,16 @@
+require 'rubygems'
+require 'sinatra'
+
+get '/go' do
+  "<html>
+    <head>
+      <script src='js/bootstrap.js'></script>
+      <script src='js/bootstrap-typeahead.js'></script>
+    </head>
+    <body>
+      <form>
+	Autocomplete: <input type="text" name="autocomplete"><br />
+      </form>
+    </body>
+   </html>"
+end
