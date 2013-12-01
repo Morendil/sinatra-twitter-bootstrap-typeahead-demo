@@ -15,7 +15,7 @@ get '/autocomplete' do
   }.to_json
 end
 
-get '/go' do
+get '/' do
   "<html>
     <head>
       <script src='js/jquery.js'></script>
@@ -32,3 +32,4 @@ get '/go' do
    </html>"
 end
 
+run Sinatra::Application
